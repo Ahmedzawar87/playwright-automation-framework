@@ -8,7 +8,7 @@ export class InventoryPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.inventoryTitle = page.getByText('Products');
+    this.inventoryTitle = page.locator('[data-test="title"]');
     this.cartLink = page.locator('[data-test="shopping-cart-link"]');
     this.cartBadge = page.locator('[data-test="shopping-cart-badge"]');
   }
